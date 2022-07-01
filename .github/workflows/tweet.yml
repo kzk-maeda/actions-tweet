@@ -19,8 +19,8 @@ jobs:
         uses: snow-actions/tweet@v1.2.0
         with:
           status: |
-            Issue opened ${{ github.issues.issue.title }}
-            ${{ github.issues.issue.html_url }}
+            Issue opened ${{ github.event.issue.title }}
+            ${{ github.event.issue.html_url }}
       # - name: Tweet details
       #   uses: snow-actions/tweet@v1.2.0
       #   with:
