@@ -23,6 +23,7 @@ jobs:
             #SomeHashTag
 
             タイトル：${{ github.event.issue.title }}
+            登録者：${{ github.event.issue.body.contact }}
             ${{ github.event.issue.html_url }}
       # - name: Tweet details
       #   uses: snow-actions/tweet@v1.2.0
